@@ -74,7 +74,7 @@ export async function getNormalConfigs(isFragment) {
     });
 
     if (settings.outProxy) {
-        let chainRemark = `#${encodeURIComponent('🌨️ Chain proxy 🔗')}`;
+        let chainRemark = `#${encodeURIComponent('😎 Chain proxy 🔗')}`;
         if (settings.outProxy.startsWith('socks') || settings.outProxy.startsWith('http')) {
             const regex = /^(?:socks|http):\/\/([^@]+)@/;
             const isUserPass = settings.outProxy.match(regex);
