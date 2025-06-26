@@ -605,7 +605,7 @@ async function buildXrayConfig(
 }
 
 async function buildXrayBestPingConfig(totalAddresses, chainProxy, outbounds, isFragment) {
-    const remark = isFragment ? `FG - Best Ping ⚡` : `Best Ping ⚡`;
+    const remark = isFragment ? `☠️ PangG - FG - Best Ping ⚡` : `⚡ PangG - Best Ping ⚡`;
     const config = await buildXrayConfig(remark, true, chainProxy, true, false, isFragment, false, totalAddresses, null);
     config.outbounds.unshift(...outbounds);
     return config;
@@ -617,7 +617,7 @@ async function buildXrayBestFragmentConfig(hostName, chainProxy, outbound) {
         '70-80', '80-90', '90-100', '10-30', '20-40', '30-50',
         '40-60', '50-70', '60-80', '70-90', '80-100', '100-200'];
 
-    const config = await buildXrayConfig(`🌨️ STV - Fragment 🌨️`, true, chainProxy, false, false, true, false, [], hostName);
+    const config = await buildXrayConfig(`☠️ PanG - STV - Fragment 🌨️`, true, chainProxy, false, false, true, false, [], hostName);
     const bestFragOutbounds = [];
 
     bestFragValues.forEach((fragLength, index) => {
